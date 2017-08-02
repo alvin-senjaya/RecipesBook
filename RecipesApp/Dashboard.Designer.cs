@@ -42,6 +42,7 @@
             this.btnCategory.TabIndex = 0;
             this.btnCategory.Text = "Category";
             this.btnCategory.UseVisualStyleBackColor = true;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
             // btnIngredient
             // 

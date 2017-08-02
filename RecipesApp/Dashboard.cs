@@ -16,5 +16,11 @@ namespace RecipesApp
         {
             InitializeComponent();
         }
+
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            CategoryForm cf = new CategoryForm();
+            cf.ShowDialog();
+        }
     }
 }
