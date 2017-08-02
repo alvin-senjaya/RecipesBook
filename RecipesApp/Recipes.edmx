@@ -62,7 +62,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_RecipeIngredient_Ingredient">
-          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="1" />
+          <End Role="Ingredient" Type="Self.Ingredient" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="RecipeIngredient" Type="Self.RecipeIngredient" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Ingredient">

@@ -53,6 +53,7 @@
             this.btnIngredient.TabIndex = 0;
             this.btnIngredient.Text = "Ingredient";
             this.btnIngredient.UseVisualStyleBackColor = true;
+            this.btnIngredient.Click += new System.EventHandler(this.btnIngredient_Click);
             // 
             // btnRecipe
             // 
@@ -76,7 +77,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
+            this.Text = "Recipe Book";
             this.ResumeLayout(false);
 
         }

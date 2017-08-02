@@ -19,8 +19,14 @@ namespace RecipesApp
 
         private void btnCategory_Click(object sender, EventArgs e)
         {
-            CategoryForm cf = new CategoryForm();
-            cf.ShowDialog();
+            CategoryForm categoryForm = new CategoryForm();
+            categoryForm.ShowDialog();
+        }
+
+        private void btnIngredient_Click(object sender, EventArgs e)
+        {
+            IngredientForm ingredientForm = new IngredientForm();
+            ingredientForm.ShowDialog();
         }
     }
 }

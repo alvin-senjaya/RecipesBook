@@ -88,7 +88,7 @@ namespace RecipesApp
                         {
                             Name = tbCategoryName.Text
                         };
-
+                        
                         context.Categories.Add(newCategory);
                         context.SaveChanges();
                         RefreshList();
@@ -129,9 +129,6 @@ namespace RecipesApp
         {
             using (RecipesEntities context = new RecipesEntities())
             {
-                //var hasilsearch = db.tbBarangs.Where(x => x.Nama_Barang.ToLower().Contains(tbSearch.Text.ToLower())).Select(x => new { x.ID_Barang, x.Nama_Barang, x.Satuan, x.Harga_Beli, x.Harga_Jual }).ToList();
-                //dgBarang.DataSource = hasilsearch;
-
                 var searchItems = context.Categories.Where(item => item.Name.ToLower().Contains(tbSearch.Text.ToLower())).Select(item => item.Name).ToList();
 
                 lbCategory.DataSource = searchItems.ToList();

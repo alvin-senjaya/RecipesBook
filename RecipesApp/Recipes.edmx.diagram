@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="68a922852b1f496d9db28eac118a50d9" Name="Diagram1">
         <EntityTypeShape EntityType="RecipesModel.Category" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="RecipesModel.Ingredient" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RecipesModel.Ingredient" Width="1.5" PointX="5.375" PointY="3.625" IsExpanded="true" />
         <EntityTypeShape EntityType="RecipesModel.Recipe" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="RecipesModel.RecipeIngredient" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="RecipesModel.FK_Recipe_ToTable" ManuallyRouted="false" />
